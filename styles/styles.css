@@ -1,3 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-size: 13px;
+  font-family: 'Rubik', sans-serif;
+}
+
+.nav {
+  height: 100px;
+  position: relative;
+  width: 100%;
+}
+
+.nav__container {
+  padding: 34px 27px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: red;
+}
+
+.nav__logo {
+  width: 147px;
+  height: 25px;
+}
+
+.nav__menu-icon {
+  width: 18px;
+  height: 15px;
+}
+
+.nav__measure {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  background-color: red;
+  height: 125px;
+  width: 6px;
+  z-index: 10;
+}
+
+.header__image-container {
+  position: relative;
+  height: 250px;
+  width: 100%;
+  background-color: aquamarine;
+}
+
+.header__image {
+  position: absolute;
+  width: 306px;
+  bottom: 10px;
+  right: 10px;
+  z-index: 2;
+}
+
+.header__bg-graphic {
+  position: absolute;
+  width: 262px;
+  height: 175px;
+  bottom: 0;
+  right: 0;
+  z-index: 0;
+  background-color: #5368df;
+  border-bottom-left-radius: 85px;
+}
+
+.header__measure {
+  position: absolute;
+  width: 28px;
+  height: 42px;
+  bottom: 0;
+  right: 0;
+  background-color: red;
+}
+
+.header__text-container {
+  margin-top: 48px;
+}
+
+.header__title {
+  font-size: 26px;
+  color: #252b46;
+  line-height: 130%;
+  text-align: center;
+  margin-bottom: 20px;
+  padding: 0 42px;
+}
+
+.header__desc {
+  font-size: 13px;
+  color: #9194a1;
+  font-weight: 500;
+  line-height: 170%;
+  text-align: center;
+  padding: 0 42px;
+}
+
+.header__button-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.header__button {
+  width: 132px;
+  height: 42px;
+  margin: 34px 6px;
+  border: none;
+  border-radius: 8px;
+}
+
+.header__button--primary {
+  background-color: #5368df;
+  color: white;
+}
+
+.header__button--secondary {
+  color: black;
+  background-color: #f7f7f7;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;

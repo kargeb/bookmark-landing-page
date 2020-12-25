@@ -1,3 +1,156 @@
+// Mobile: 375px
+// Desktop: 1440px
+
+$soft-blue: hsl(231, 69%, 60%);
+$soft-red: hsl(0, 94%, 66%);
+$grayish-blue: hsl(229, 8%, 60%);
+$very-dark-blue: hsl(229, 31%, 21%);
+$light-button-color: hsl(0,0,97%);
+
+$font-size-primary: 18px;
+$font-size-secondary: 13px;
+
+$font-color-primary: $very-dark-blue;
+$font-color-secondary: $grayish-blue;
+$font-size-mobile-primary: 26px;
+$font-size-mobile-secondary: 13px;
+$font-weight-regular: 400;
+$font-weight-medium: 500;
+
+
+$primary-color: $soft-blue;
+$secondary-color: $soft-red;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: $font-size-mobile-secondary;
+    font-family: 'Rubik', sans-serif;
+}
+
+.nav {
+    height: 100px;
+    position: relative;
+    width: 100%;
+
+    &__container {
+        padding: 34px 27px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: red;
+    }
+
+    &__logo {
+        width: 147px;
+        height: 25px;
+    }
+
+    &__menu-icon {
+        width: 18px;
+        height: 15px;
+    }
+
+    &__measure {
+        position: absolute;
+        top: 0;
+        right: 10px;
+        background-color: red;
+        height: 125px;
+        width: 6px;
+        z-index: 10;
+    }
+}
+
+.header {
+
+    &__image-container {
+        position: relative;
+        height: 250px;
+        width: 100%;
+        background-color: aquamarine;
+
+    }
+
+    &__image {
+        position: absolute;
+        width: 306px;
+        bottom: 10px;
+        right: 10px;
+        z-index: 2;
+    }
+
+    &__bg-graphic {
+        position: absolute;
+        width: 262px;
+        height: 175px;
+        bottom: 0;
+        right: 0;
+        z-index: 0;
+        background-color: $primary-color;
+        border-bottom-left-radius: 85px;
+    }
+
+    &__measure {
+        position: absolute;
+        width: 28px;
+        height: 42px;
+        bottom: 0;
+        right: 0;
+        background-color: red;
+
+    }
+
+    &__text-container {
+        margin-top: 48px;
+    }
+
+    &__title {
+        font-size: $font-size-mobile-primary;
+        color: $font-color-primary;
+        line-height: 130%;
+        text-align: center;
+        margin-bottom: 20px;
+        padding: 0 42px;
+    }
+
+    &__desc {
+        font-size: $font-size-mobile-secondary;
+        color: $font-color-secondary;
+        font-weight: $font-weight-medium;
+        line-height: 170%;
+        text-align: center;
+        padding: 0 42px;
+    }
+
+    &__button-container {
+        display: flex;
+        justify-content: center;
+    }
+
+    &__button {
+        width: 132px;
+        height: 42px;
+        margin: 34px 6px;
+        border: none;
+        border-radius: 8px;
+
+        &--primary {
+            background-color: $primary-color;
+            color: white;
+        }
+        &--secondary {
+            color: black;
+            background-color: $light-button-color;
+        }
+    }
+}
+
 .attribution {
     font-size: 11px; text-align: center;
 
