@@ -1,0 +1,23 @@
+@import '../utilities/variables';
+
+.button {
+    height: 48px;
+    font-size: $font-size-button;
+    font-weight: $font-weight-medium;
+    border: none;
+    border-radius: 5px;
+    letter-spacing: 0.25px;
+    box-shadow: 0px 8px 8px -4px rgba(73, 93, 207, 0.20012);
+
+    &--primary {
+        width: 151px;
+        background-color: $primary;
+        color: white;
+    }
+
+    &--secondary {
+        width: 146px;
+        color: $very-dark-blue;
+        background-color: $very-light;
+    }
+}

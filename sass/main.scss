@@ -1,10 +1,10 @@
+@import 'utilities/_reset';
+@import 'utilities/variables';
+@import 'base/typography';
+@import 'components/buttons';
 // Mobile: 375px
 // Desktop: 1440px
 
-$soft-blue: hsl(231, 69%, 60%);
-$soft-red: hsl(0, 94%, 66%);
-$grayish-blue: hsl(229, 8%, 60%);
-$very-dark-blue: hsl(229, 31%, 21%);
 
 $font-size-primary: 18px;
 $font-size-secondary: 13px;
@@ -21,17 +21,6 @@ $color-secondary: $soft-red;
 
 $button-font-size: 14px;
 $button-color-light: hsl(0,0,97%);
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-size: $font-size-mobile-secondary;
-    font-family: 'Rubik', sans-serif;
-}
 
 .nav {
     width: 100%;
@@ -95,7 +84,7 @@ body {
     }
 
     &__title {
-        font-size: $font-size-mobile-primary;
+        font-size: $headline;
         color: $font-color-primary;
         font-weight: $font-weight-medium;
         line-height: 40px;
@@ -118,29 +107,33 @@ body {
         display: flex;
         justify-content: center;
         padding-top: 32px;
+
+        .button {
+            margin: 0 7px;
+        }
     }
 
-    &__button {
-        height: 48px;
-        margin: 0 7px;
-        border: none;
-        border-radius: 5px;
-        font-size: $button-font-size;
-        font-weight: $font-weight-medium;
-        letter-spacing: 0.25px;
-        box-shadow: 0px 8px 8px -4px rgba(73, 93, 207, 0.20012);
+    // &__button {
+    //     height: 48px;
+    //     margin: 0 7px;
+    //     border: none;
+    //     border-radius: 5px;
+    //     font-size: $button-font-size;
+    //     font-weight: $font-weight-medium;
+    //     letter-spacing: 0.25px;
+    //     box-shadow: 0px 8px 8px -4px rgba(73, 93, 207, 0.20012);
         
-        &--primary {
-            width: 151px;
-            background-color: $color-primary;
-            color: white;
-        }
-        &--secondary {
-            width: 146px;
-            color: $very-dark-blue;
-            background-color: $button-color-light;
-        }
-    }
+    //     &--primary {
+    //         width: 151px;
+    //         background-color: $color-primary;
+    //         color: white;
+    //     }
+    //     &--secondary {
+    //         width: 146px;
+    //         color: $very-dark-blue;
+    //         background-color: $button-color-light;
+    //     }
+    // }
 }
 
 .attribution {
