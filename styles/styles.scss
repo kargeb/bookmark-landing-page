@@ -5,7 +5,7 @@ $soft-blue: hsl(231, 69%, 60%);
 $soft-red: hsl(0, 94%, 66%);
 $grayish-blue: hsl(229, 8%, 60%);
 $very-dark-blue: hsl(229, 31%, 21%);
-$light-button-color: hsl(0,0,97%);
+$button-color-light: hsl(0,0,97%);
 
 $font-size-primary: 18px;
 $font-size-secondary: 13px;
@@ -57,15 +57,6 @@ body {
         width: 18px;
         height: 15px;
     }
-
-    &__measure {
-        position: absolute;
-        top: 0;
-        right: 100px;
-        height: 145px;
-        width: 6px;
-        z-index: 400;
-    }
 }
 
 .header {
@@ -75,7 +66,6 @@ body {
         position: relative;
         height: 281px;
         width: 100%;
-        // background-color: aquamarine;
         overflow: hidden;
 
     }
@@ -98,48 +88,6 @@ body {
         z-index: 10;
         background-color: $primary-color;
         border-radius: 316px;
-    }
-
-    &__measure-right {
-        position: absolute;
-        width: 31px;
-        z-index: 100;
-        height: 42px;
-        bottom: 100px;
-        right: 0;
-        background-color: red;
-    }
-
-    &__measure-image {
-        position: absolute;
-        // width: 31px;
-        opacity: 0.5;
-        z-index: 300;
-        height: 206px;
-        bottom: 48px;
-        right: 31px;
-        left: 33px;
-        // background-color: darkcyan;
-    }
-
-    &__measure-left {
-        position: absolute;
-        width: 33px;
-        z-index: 100;
-        height: 42px;
-        bottom: 100px;
-        left: 0;
-        background-color: palevioletred;
-    }
-
-    &__measure-bottom {
-        position: absolute;
-        width: 48px;
-        height: 48px;
-        z-index: 100;
-        bottom: 0;
-        right: 100px;
-        background-color:yellow;
     }
 
     &__text-and-buttons-container {
@@ -190,7 +138,7 @@ body {
         &--secondary {
             width: 146px;
             color: $very-dark-blue;
-            background-color: $light-button-color;
+            background-color: $button-color-light;
         }
     }
 }

@@ -48,15 +48,6 @@ body {
   height: 15px;
 }
 
-.nav__measure {
-  position: absolute;
-  top: 0;
-  right: 100px;
-  height: 145px;
-  width: 6px;
-  z-index: 400;
-}
-
 .header {
   padding-top: 12px;
 }
@@ -86,46 +77,6 @@ body {
   z-index: 10;
   background-color: #5368df;
   border-radius: 316px;
-}
-
-.header__measure-right {
-  position: absolute;
-  width: 31px;
-  z-index: 100;
-  height: 42px;
-  bottom: 100px;
-  right: 0;
-  background-color: red;
-}
-
-.header__measure-image {
-  position: absolute;
-  opacity: 0.5;
-  z-index: 300;
-  height: 206px;
-  bottom: 48px;
-  right: 31px;
-  left: 33px;
-}
-
-.header__measure-left {
-  position: absolute;
-  width: 33px;
-  z-index: 100;
-  height: 42px;
-  bottom: 100px;
-  left: 0;
-  background-color: palevioletred;
-}
-
-.header__measure-bottom {
-  position: absolute;
-  width: 48px;
-  height: 48px;
-  z-index: 100;
-  bottom: 0;
-  right: 100px;
-  background-color: yellow;
 }
 
 .header__text-and-buttons-container {
