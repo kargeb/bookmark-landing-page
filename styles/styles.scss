@@ -5,15 +5,16 @@ $soft-blue: hsl(231, 69%, 60%);
 $soft-red: hsl(0, 94%, 66%);
 $grayish-blue: hsl(229, 8%, 60%);
 $very-dark-blue: hsl(229, 31%, 21%);
-$light-button-color: hsl(0,0,97%);
+$button-color-light: hsl(0,0,97%);
 
 $font-size-primary: 18px;
 $font-size-secondary: 13px;
+$font-size-mobile-primary: 30px;
+$font-size-mobile-secondary: 15px;
+$button-font-size: 14px;
 
 $font-color-primary: $very-dark-blue;
 $font-color-secondary: $grayish-blue;
-$font-size-mobile-primary: 26px;
-$font-size-mobile-secondary: 13px;
 $font-weight-regular: 400;
 $font-weight-medium: 500;
 
@@ -33,17 +34,18 @@ body {
 }
 
 .nav {
-    height: 100px;
-    position: relative;
     width: 100%;
+    padding: 40px 0;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     &__container {
-        padding: 34px 27px;
-        width: 100%;
+        width: 311px;
         display: flex;
         justify-content: space-between;
-        align-items: center;
-        background-color: red;
+        align-items: center; 
     }
 
     &__logo {
@@ -55,98 +57,88 @@ body {
         width: 18px;
         height: 15px;
     }
-
-    &__measure {
-        position: absolute;
-        top: 0;
-        right: 10px;
-        background-color: red;
-        height: 125px;
-        width: 6px;
-        z-index: 10;
-    }
 }
 
 .header {
+    padding-top: 12px;
 
     &__image-container {
         position: relative;
-        height: 250px;
+        height: 281px;
         width: 100%;
-        background-color: aquamarine;
+        overflow: hidden;
 
     }
 
     &__image {
         position: absolute;
-        width: 306px;
-        bottom: 10px;
-        right: 10px;
-        z-index: 2;
+        width: 334px;
+        height: 247px;
+        bottom: 12px;
+        right: 12px;
+        z-index: 20;
     }
 
-    &__bg-graphic {
+    &__oval-graphic {
         position: absolute;
-        width: 262px;
-        height: 175px;
+        width: 577px;
+        height: 203px;
         bottom: 0;
-        right: 0;
-        z-index: 0;
+        left: 71px;
+        z-index: 10;
         background-color: $primary-color;
-        border-bottom-left-radius: 85px;
+        border-radius: 316px;
     }
 
-    &__measure {
-        position: absolute;
-        width: 28px;
-        height: 42px;
-        bottom: 0;
-        right: 0;
-        background-color: red;
-
-    }
-
-    &__text-container {
+    &__text-and-buttons-container {
         margin-top: 48px;
     }
 
     &__title {
         font-size: $font-size-mobile-primary;
         color: $font-color-primary;
-        line-height: 130%;
+        font-weight: $font-weight-medium;
+        line-height: 40px;
+        letter-spacing: -0.09px;
         text-align: center;
-        margin-bottom: 20px;
-        padding: 0 42px;
+        padding: 0 20px;
     }
-
+    
     &__desc {
+        margin-top: 16px;
         font-size: $font-size-mobile-secondary;
         color: $font-color-secondary;
-        font-weight: $font-weight-medium;
-        line-height: 170%;
+        font-weight: $font-weight-regular;
+        line-height: 25px;
         text-align: center;
         padding: 0 42px;
     }
 
-    &__button-container {
+    &__buttons-wrapper {
         display: flex;
         justify-content: center;
+        padding-top: 32px;
     }
 
     &__button {
-        width: 132px;
-        height: 42px;
-        margin: 34px 6px;
+        height: 48px;
+        margin: 0 7px;
         border: none;
-        border-radius: 8px;
-
+        border-radius: 5px;
+        font-size: $button-font-size;
+        font-weight: $font-weight-medium;
+        letter-spacing: 0.25px;
+        box-shadow: 0px 8px 8px -4px rgba(73, 93, 207, 0.20012);
+        
         &--primary {
+            width: 151px;
             background-color: $primary-color;
             color: white;
         }
         &--secondary {
-            color: black;
-            background-color: $light-button-color;
+            width: 146px;
+            color: $very-dark-blue;
+            background-color: $button-color-light;
         }
     }
 }
