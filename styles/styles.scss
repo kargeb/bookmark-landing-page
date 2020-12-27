@@ -65,7 +65,7 @@ body {
         background-color: red;
         height: 145px;
         width: 6px;
-        z-index: 10;
+        z-index: 400;
     }
 }
 
@@ -74,29 +74,31 @@ body {
 
     &__image-container {
         position: relative;
-        height: 260px;
+        height: 281px;
         width: 100%;
         background-color: aquamarine;
+        overflow: hidden;
 
     }
 
     &__image {
         position: absolute;
         width: 334px;
-        bottom: 0px;
+        height: 247px;
+        bottom: 12px;
         right: 12px;
-        z-index: 2;
+        z-index: 20;
     }
 
-    &__bg-graphic {
+    &__oval-graphic {
         position: absolute;
-        width: 262px;
-        height: 175px;
+        width: 577px;
+        height: 203px;
         bottom: 0;
-        right: 0;
-        z-index: 0;
+        left: 71px;
+        z-index: 10;
         background-color: $primary-color;
-        border-bottom-left-radius: 85px;
+        border-radius: 316px;
     }
 
     &__measure-right {
@@ -109,14 +111,36 @@ body {
         background-color: red;
     }
 
+    &__measure-image {
+        position: absolute;
+        // width: 31px;
+        opacity: 0.5;
+        z-index: 300;
+        height: 206px;
+        bottom: 48px;
+        right: 31px;
+        left: 33px;
+        background-color: darkcyan;
+    }
+
     &__measure-left {
         position: absolute;
         width: 33px;
         z-index: 100;
         height: 42px;
         bottom: 100px;
-        right: left;
+        left: 0;
         background-color: palevioletred;
+    }
+
+    &__measure-bottom {
+        position: absolute;
+        width: 48px;
+        height: 48px;
+        z-index: 100;
+        bottom: 0;
+        right: 100px;
+        background-color:yellow;
     }
 
     &__text-container {
