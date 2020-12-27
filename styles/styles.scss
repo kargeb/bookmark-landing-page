@@ -5,22 +5,25 @@ $soft-blue: hsl(231, 69%, 60%);
 $soft-red: hsl(0, 94%, 66%);
 $grayish-blue: hsl(229, 8%, 60%);
 $very-dark-blue: hsl(229, 31%, 21%);
-$button-color-light: hsl(0,0,97%);
 
 $font-size-primary: 18px;
 $font-size-secondary: 13px;
 $font-size-mobile-primary: 30px;
 $font-size-mobile-secondary: 15px;
-$button-font-size: 14px;
 
-$font-color-primary: $very-dark-blue;
-$font-color-secondary: $grayish-blue;
 $font-weight-regular: 400;
 $font-weight-medium: 500;
 
+$font-color-primary: $very-dark-blue;
+$font-color-secondary: $grayish-blue;
+$color-primary: $soft-blue;
+$color-secondary: $soft-red;
 
-$primary-color: $soft-blue;
-$secondary-color: $soft-red;
+$button-color-light: hsl(0,0,97%);
+$button-font-size: 14px;
+
+
+
 
 * {
     margin: 0;
@@ -86,7 +89,7 @@ body {
         bottom: 0;
         left: 71px;
         z-index: 10;
-        background-color: $primary-color;
+        background-color: $color-primary;
         border-radius: 316px;
     }
 
@@ -132,7 +135,7 @@ body {
         
         &--primary {
             width: 151px;
-            background-color: $primary-color;
+            background-color: $color-primary;
             color: white;
         }
         &--secondary {
