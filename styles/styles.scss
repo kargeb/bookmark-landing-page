@@ -9,11 +9,11 @@ $light-button-color: hsl(0,0,97%);
 
 $font-size-primary: 18px;
 $font-size-secondary: 13px;
+$font-size-mobile-primary: 30px;
+$font-size-mobile-secondary: 15px;
 
 $font-color-primary: $very-dark-blue;
 $font-color-secondary: $grayish-blue;
-$font-size-mobile-primary: 26px;
-$font-size-mobile-secondary: 13px;
 $font-weight-regular: 400;
 $font-weight-medium: 500;
 
@@ -45,7 +45,7 @@ body {
         display: flex;
         justify-content: space-between;
         align-items: center; 
-        background-color: red;
+        // background-color: red;
     }
 
     &__logo {
@@ -62,7 +62,7 @@ body {
         position: absolute;
         top: 0;
         right: 100px;
-        background-color: red;
+        // background-color: red;
         height: 145px;
         width: 6px;
         z-index: 400;
@@ -76,7 +76,7 @@ body {
         position: relative;
         height: 281px;
         width: 100%;
-        background-color: aquamarine;
+        // background-color: aquamarine;
         overflow: hidden;
 
     }
@@ -120,7 +120,7 @@ body {
         bottom: 48px;
         right: 31px;
         left: 33px;
-        background-color: darkcyan;
+        // background-color: darkcyan;
     }
 
     &__measure-left {
@@ -150,17 +150,19 @@ body {
     &__title {
         font-size: $font-size-mobile-primary;
         color: $font-color-primary;
-        line-height: 130%;
+        font-weight: $font-weight-medium;
+        line-height: 40px;
+        letter-spacing: -0.09px;
         text-align: center;
-        margin-bottom: 20px;
-        padding: 0 42px;
+        padding: 0 20px;
     }
-
+    
     &__desc {
+        margin-top: 16px;
         font-size: $font-size-mobile-secondary;
         color: $font-color-secondary;
-        font-weight: $font-weight-medium;
-        line-height: 170%;
+        font-weight: $font-weight-regular;
+        line-height: 25px;
         text-align: center;
         padding: 0 42px;
     }

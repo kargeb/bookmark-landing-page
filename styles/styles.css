@@ -6,7 +6,7 @@
 }
 
 body {
-  font-size: 13px;
+  font-size: 15px;
   font-family: 'Rubik', sans-serif;
 }
 
@@ -36,7 +36,6 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: red;
 }
 
 .nav__logo {
@@ -53,7 +52,6 @@ body {
   position: absolute;
   top: 0;
   right: 100px;
-  background-color: red;
   height: 145px;
   width: 6px;
   z-index: 400;
@@ -67,7 +65,6 @@ body {
   position: relative;
   height: 281px;
   width: 100%;
-  background-color: aquamarine;
   overflow: hidden;
 }
 
@@ -109,7 +106,6 @@ body {
   bottom: 48px;
   right: 31px;
   left: 33px;
-  background-color: darkcyan;
 }
 
 .header__measure-left {
@@ -137,19 +133,21 @@ body {
 }
 
 .header__title {
-  font-size: 26px;
+  font-size: 30px;
   color: #252b46;
-  line-height: 130%;
+  font-weight: 500;
+  line-height: 40px;
+  letter-spacing: -0.09px;
   text-align: center;
-  margin-bottom: 20px;
-  padding: 0 42px;
+  padding: 0 20px;
 }
 
 .header__desc {
-  font-size: 13px;
+  margin-top: 16px;
+  font-size: 15px;
   color: #9194a1;
-  font-weight: 500;
-  line-height: 170%;
+  font-weight: 400;
+  line-height: 25px;
   text-align: center;
   padding: 0 42px;
 }
