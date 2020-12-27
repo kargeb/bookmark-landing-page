@@ -11,6 +11,7 @@ $font-size-primary: 18px;
 $font-size-secondary: 13px;
 $font-size-mobile-primary: 30px;
 $font-size-mobile-secondary: 15px;
+$button-font-size: 14px;
 
 $font-color-primary: $very-dark-blue;
 $font-color-secondary: $grayish-blue;
@@ -45,7 +46,6 @@ body {
         display: flex;
         justify-content: space-between;
         align-items: center; 
-        // background-color: red;
     }
 
     &__logo {
@@ -62,7 +62,6 @@ body {
         position: absolute;
         top: 0;
         right: 100px;
-        // background-color: red;
         height: 145px;
         width: 6px;
         z-index: 400;
@@ -143,7 +142,7 @@ body {
         background-color:yellow;
     }
 
-    &__text-container {
+    &__text-and-buttons-container {
         margin-top: 48px;
     }
 
@@ -167,24 +166,29 @@ body {
         padding: 0 42px;
     }
 
-    &__button-container {
+    &__buttons-wrapper {
         display: flex;
         justify-content: center;
     }
 
     &__button {
-        width: 132px;
-        height: 42px;
-        margin: 34px 6px;
+        height: 48px;
+        margin: 32px 7px;
         border: none;
-        border-radius: 8px;
-
+        border-radius: 5px;
+        font-size: $button-font-size;
+        font-weight: $font-weight-medium;
+        letter-spacing: 0.25px;
+        box-shadow: 0px 8px 8px -4px rgba(73, 93, 207, 0.20012);
+        
         &--primary {
+            width: 151px;
             background-color: $primary-color;
             color: white;
         }
         &--secondary {
-            color: black;
+            width: 146px;
+            color: $very-dark-blue;
             background-color: $light-button-color;
         }
     }
