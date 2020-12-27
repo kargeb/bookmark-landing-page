@@ -159,11 +159,12 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding-top: 32px;
 }
 
 .header__button {
   height: 48px;
-  margin: 32px 7px;
+  margin: 0 7px;
   border: none;
   border-radius: 5px;
   font-size: 14px;

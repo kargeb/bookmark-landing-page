@@ -169,11 +169,12 @@ body {
     &__buttons-wrapper {
         display: flex;
         justify-content: center;
+        padding-top: 32px;
     }
 
     &__button {
         height: 48px;
-        margin: 32px 7px;
+        margin: 0 7px;
         border: none;
         border-radius: 5px;
         font-size: $button-font-size;
