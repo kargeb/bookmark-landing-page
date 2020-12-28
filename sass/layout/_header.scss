@@ -1,0 +1,64 @@
+@import '../utilities/variables';
+
+.header {
+    padding-top: 12px;
+
+    &__image-container {
+        position: relative;
+        height: 281px;
+        width: 100%;
+        overflow: hidden;
+
+    }
+
+    &__image {
+        position: absolute;
+        width: 334px;
+        height: 247px;
+        bottom: 12px;
+        right: 12px;
+        z-index: 20;
+    }
+
+    &__oval-graphic {
+        position: absolute;
+        width: 577px;
+        height: 203px;
+        bottom: 0;
+        left: 71px;
+        z-index: 10;
+        background-color: $primary;
+        border-radius: 316px;
+    }
+
+    &__text-and-buttons-container {
+        margin-top: 48px;
+    }
+
+    &__title {
+        font-size: $headline;
+        color: $dark;
+        font-weight: $font-weight-medium;
+        line-height: 40px;
+        letter-spacing: -0.09px;
+        text-align: center;
+        padding: 0 20px;
+    }
+    
+    &__desc {
+        margin-top: 16px;
+        font-size: $font-size-regular;
+        color: $light;
+        font-weight: $font-weight-regular;
+        line-height: 25px;
+        text-align: center;
+        padding: 0 42px;
+    }
+
+    &__buttons-wrapper {
+        display: flex;
+        justify-content: center;
+        padding-top: 32px;
+
+    }
+}

@@ -4,10 +4,10 @@ $grayish-blue: hsl(229, 8%, 60%);
 $very-dark-blue: hsl(229, 31%, 21%);
 
 
-$primary: $soft-blue;
-$secondary: $soft-red;
-$dark: $very-dark-blue;
-$light: $grayish-blue;
+$primary: $soft-blue; // hsl(231, 69%, 60%);
+$secondary: $soft-red; // hsl(0, 94%, 66%);
+$dark: $very-dark-blue; //hsl(229, 31%, 21%);
+$light: $grayish-blue;  // hsl(229, 8%, 60%);
 $very-light: hsl(0,0,97%);
 
 $font-size-large: 30px;

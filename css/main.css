@@ -12,6 +12,7 @@ body {
 }
 
 .button {
+  font-family: 'Rubik', sans-serif;
   height: 48px;
   font-size: 14px;
   font-weight: 500;
@@ -32,6 +33,10 @@ body {
   width: 146px;
   color: #252b46;
   background-color: #f7f7f7;
+}
+
+.button--margin {
+  margin: 0 7px;
 }
 
 .nav {
@@ -135,10 +140,6 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   padding-top: 32px;
-}
-
-.header__buttons-wrapper .button {
-  margin: 0 7px;
 }
 
 .attribution {
