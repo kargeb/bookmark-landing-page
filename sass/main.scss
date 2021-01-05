@@ -4,7 +4,8 @@
 @import 'components/buttons';
 @import 'layout/navigation';
 @import 'layout/header';
-// Mobile: 375px
+@import 'layout/features';
+// Mobile: 375px  (+ 16px scrollbar - 391 in mobile view)
 // Desktop: 1440px
 
 .attribution {

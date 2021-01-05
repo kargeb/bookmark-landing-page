@@ -1,0 +1,54 @@
+.features {
+    
+    &__header {
+        margin: 140px 32px 40px 32px;
+        text-align: center;
+    }
+ 
+    &__title {
+        font-size: $title;
+        font-weight: $font-weight-medium;
+        line-height: 52px;
+        letter-spacing: -0.075px;
+    }
+
+    &__description {
+        font-size: $body;
+        font-weight: $font-weight-regular;
+        line-height: 25px;
+        color: $light;
+    }
+
+    &__buttons-container {
+        // margin: 0 32px;
+
+        width: 100%;
+        padding: 0 32px;;
+
+        // padding: 32px;
+    }
+
+    &__button {
+        position: relative;
+        width: 100%;
+        height: 58px;
+        font-size: 16px;
+        line-height: 17px;
+        color: $dark;
+        letter-spacing: 0.533333px;
+        outline: none;
+        cursor: pointer;
+    }
+
+    &__button-underscore {
+        position: absolute;
+        background-color: $secondary;
+        z-index: 50;
+        width: 143px;
+        height: 4px;
+        bottom: 0;
+        left: 50%;
+        // left: 0;
+        transform: translateX(-50%);
+    }
+}
