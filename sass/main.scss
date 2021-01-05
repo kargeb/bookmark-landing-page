@@ -1,0 +1,15 @@
+@import 'utilities/_reset';
+@import 'utilities/variables';
+@import 'base/typography';
+@import 'components/buttons';
+@import 'layout/navigation';
+@import 'layout/header';
+@import 'layout/features';
+// Mobile: 375px  (+ 16px scrollbar - 391 in mobile view)
+// Desktop: 1440px
+
+.attribution {
+    font-size: 11px; text-align: center;
+
+    a { color: hsl(228, 45%, 44%); }
+}

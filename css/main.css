@@ -1,4 +1,5 @@
-* {
+*, *::after,
+*::before {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
@@ -8,6 +9,39 @@
 body {
   font-size: 15px;
   font-family: 'Rubik', sans-serif;
+}
+
+button {
+  background-color: white;
+  border: none;
+}
+
+.button {
+  font-family: 'Rubik', sans-serif;
+  height: 48px;
+  font-size: 14px;
+  font-weight: 500;
+  border: none;
+  border-radius: 5px;
+  letter-spacing: 0.25px;
+  -webkit-box-shadow: 0px 8px 8px -4px rgba(73, 93, 207, 0.20012);
+          box-shadow: 0px 8px 8px -4px rgba(73, 93, 207, 0.20012);
+}
+
+.button--primary {
+  width: 151px;
+  background-color: #5368df;
+  color: white;
+}
+
+.button--secondary {
+  width: 146px;
+  color: #252b46;
+  background-color: #f7f7f7;
+}
+
+.button--margin {
+  margin: 0 7px;
 }
 
 .nav {
@@ -113,28 +147,52 @@ body {
   padding-top: 32px;
 }
 
-.header__button {
-  height: 48px;
-  margin: 0 7px;
-  border: none;
-  border-radius: 5px;
-  font-size: 14px;
+.features__header {
+  margin: 140px 32px 40px 32px;
+  text-align: center;
+}
+
+.features__title {
+  font-size: 24px;
   font-weight: 500;
-  letter-spacing: 0.25px;
-  -webkit-box-shadow: 0px 8px 8px -4px rgba(73, 93, 207, 0.20012);
-          box-shadow: 0px 8px 8px -4px rgba(73, 93, 207, 0.20012);
+  line-height: 52px;
+  letter-spacing: -0.075px;
 }
 
-.header__button--primary {
-  width: 151px;
-  background-color: #5368df;
-  color: white;
+.features__description {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 25px;
+  color: #9194a1;
 }
 
-.header__button--secondary {
-  width: 146px;
+.features__buttons-container {
+  width: 100%;
+  padding: 0 32px;
+}
+
+.features__button {
+  position: relative;
+  width: 100%;
+  height: 58px;
+  font-size: 16px;
+  line-height: 17px;
   color: #252b46;
-  background-color: #f7f7f7;
+  letter-spacing: 0.533333px;
+  outline: none;
+  cursor: pointer;
+}
+
+.features__button-underscore {
+  position: absolute;
+  background-color: #fa5757;
+  z-index: 50;
+  width: 143px;
+  height: 4px;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 .attribution {
@@ -145,4 +203,4 @@ body {
 .attribution a {
   color: #3e52a3;
 }
-/*# sourceMappingURL=styles.css.map */
+/*# sourceMappingURL=main.css.map */
